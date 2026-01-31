@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfolio de Erick Souza Silva - Engenharia da Computação"
+        />
+        <meta name="theme-color" content="#0066cc" />
+        <link rel="stylesheet" href="CSS/styles.css" />
+        <title>Erick's Portfolio</title>
+    </head>
+    <body class="mac-90s">
+        <!-- BARRA DE MENU SUPERIOR (CLASSIC MAC OS) -->
+        <div
+            class="menu-bar-90s"
+            role="menubar"
+            aria-label="Barra de menu do sistema"
+        >
+            <div
+                class="apple-menu"
+                role="button"
+                tabindex="0"
+                aria-label="Apple Menu"
+                aria-expanded="false"
+            >
+                <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M7 1C5 1 4 2 4 4C4 5 4.5 6 5 6.5C3 7 2 9 2 11C2 13.5 4 15 7 15C10 15 12 13.5 12 11C12 9 11 7 9 6.5C9.5 6 10 5 10 4C10 2 9 1 7 1Z"
+                        fill="white"
+                    />
+                </svg>
+            </div>
+            <div class="menu-items-90s">
+                <span role="menuitem" tabindex="0">File</span>
+                <span role="menuitem" tabindex="0">Edit</span>
+                <span role="menuitem" tabindex="0">View</span>
+            </div>
+            <div class="menu-spacer"></div>
+            <div class="status-bar-90s">
+                <span aria-label="Bateria: 100%">🔋</span>
+                <span
+                    class="time-display"
+                    aria-label="Hora atual"
+                    aria-live="polite"
+                    >14:30</span
+                >
+            </div>
+        </div>
+
+        <!-- JANELA PRINCIPAL -->
+        <div class="container-90s">
+            <!-- TITLE BAR COM BOTÕES CLÁSSICOS -->
+            <div class="title-bar-90s">
+                <div class="buttons-90s">
+                    <button
+                        class="btn-90s close"
+                        aria-label="Fechar janela"
+                        title="Fechar (⌘W)"
+                    ></button>
+                    <button
+                        class="btn-90s minimize"
+                        aria-label="Minimizar janela"
+                        title="Minimizar (⌘M)"
+                    ></button>
+                    <button
+                        class="btn-90s maximize"
+                        aria-label="Maximizar janela"
+                        title="Zoom (⌘Z)"
+                    ></button>
+                </div>
+                <span class="window-title" id="window-name"
+                    >Erick's Portfolio.app</span
+                >
+            </div>
+
+            <!-- CONTEÚDO PRINCIPAL -->
+            <div class="content-90s">
+                <!-- HEADER COM DESIGN IBOOK -->
+                <header class="header-90s">
+                    <div class="ibook-design">
+                        <h1>Erick's Portfolio</h1>
+                        <div class="decorative-line"></div>
+                        <p class="subtitle">Computer Engineering Student</p>
+                    </div>
+                </header>
+
+                <!-- LAYOUT: SIDEBAR + MAIN CONTENT -->
+                <main class="layout-90s">
+                    <!-- SIDEBAR - FINDER STYLE NAVIGATION -->
+                    <nav
+                        class="sidebar-90s"
+                        role="navigation"
+                        aria-label="Navegação principal"
+                    >
+                        <div class="sidebar-header">
+                            <strong>Portfolio</strong>
+                        </div>
+                        <button
+                            class="nav-item-90s active"
+                            onclick="navigateToSection('about')"
+                            data-section="about"
+                            aria-current="page"
+                        >
+                            <span class="icon">📄</span>
+                            <span class="label">About</span>
+                        </button>
+                        <button
+                            class="nav-item-90s"
+                            onclick="navigateToSection('projects')"
+                            data-section="projects"
+                        >
+                            <span class="icon">🎨</span>
+                            <span class="label">Projects</span>
+                        </button>
+                        <button
+                            class="nav-item-90s"
+                            onclick="navigateToSection('skills')"
+                            data-section="skills"
+                        >
+                            <span class="icon">⚡</span>
+                            <span class="label">Skills</span>
+                        </button>
+                        <button
+                            class="nav-item-90s"
+                            onclick="navigateToSection('contact')"
+                            data-section="contact"
+                        >
+                            <span class="icon">📧</span>
+                            <span class="label">Contact</span>
+                        </button>
+                        <hr class="sidebar-divider" />
+                        <div class="sidebar-footer">
+                            <small>v1.0</small>
+                        </div>
+                    </nav>
+
+                    <!-- SEÇÕES PRINCIPAIS -->
+                    <div class="main-90s">
+                        <!-- SEÇÃO: ABOUT -->
+                        <section
+                            class="section-90s"
+                            id="about"
+                            role="region"
+                            aria-labelledby="about-title"
+                        >
+                            <h2 id="about-title">About Me</h2>
+                            <div class="text-box-90s">
+                                <p>
+                                    Olá! Meu nome é <strong>Erick</strong>, sou
+                                    estudante de
+                                    <strong>Engenharia da Computação</strong>.
+                                    Sou apaixonado por tecnologia e programação,
+                                    sempre em busca de novos desafios e
+                                    oportunidades para crescer profissional e
+                                    academicamente.
+                                </p>
+                                <p style="margin-top: 10px">
+                                    <strong>Interesses Pessoais:</strong>
+                                </p>
+                                <ul style="margin-left: 20px; margin-top: 6px">
+                                    <li>✓ Novas tecnologias e tendências</li>
+                                    <li>✓ Filmes de terror e suspense</li>
+                                    <li>✓ Desenvolvimento web e desktop</li>
+                                    <li>✓ Design de interfaces retrô</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- SEÇÃO: PROJECTS -->
+                        <section
+                            class="section-90s"
+                            id="projects"
+                            role="region"
+                            aria-labelledby="projects-title"
+                        >
+                            <h2 id="projects-title">Featured Projects</h2>
+
+                            <article class="project-card-90s">
+                                <div class="project-header-90s">
+                                    <span class="badge-python">PYTHON</span>
+                                    <span class="year-badge">2024</span>
+                                </div>
+                                <h3>Biblioteca Senac - TCC</h3>
+                                <p>
+                                    Sistema completo de gestão de biblioteca
+                                    desenvolvido como Trabalho de Conclusão de
+                                    Curso em parceria com a faculdade do Rio
+                                    Grande do Norte.
+                                </p>
+                                <div class="tech-stack-90s">
+                                    <span class="tech-tag-90s">Python</span>
+                                    <span class="tech-tag-90s">Flask</span>
+                                    <span class="tech-tag-90s">Bootstrap</span>
+                                    <span class="tech-tag-90s">PostgreSQL</span>
+                                </div>
+                            </article>
+
+                            <article class="project-card-90s">
+                                <div class="project-header-90s">
+                                    <span class="badge-csharp">C#</span>
+                                    <span class="year-badge">2023</span>
+                                </div>
+                                <h3>Pizzaria System</h3>
+                                <p>
+                                    Sistema desktop completo de gestão para
+                                    pizzarias, com controle de pedidos, estoque
+                                    e relatórios financeiros.
+                                </p>
+                                <div class="tech-stack-90s">
+                                    <span class="tech-tag-90s">C#</span>
+                                    <span class="tech-tag-90s"
+                                        >Windows Forms</span
+                                    >
+                                    <span class="tech-tag-90s">SQL Server</span>
+                                </div>
+                            </article>
+
+                            <article class="project-card-90s">
+                                <div class="project-header-90s">
+                                    <span class="badge-web">WEB</span>
+                                    <span class="year-badge">2024</span>
+                                </div>
+                                <h3>MF DOOM Website</h3>
+                                <p>
+                                    Primeiro website desenvolvido com HTML e
+                                    CSS, incorporando conceitos modernos de
+                                    responsividade e acessibilidade web.
+                                </p>
+                                <div class="tech-stack-90s">
+                                    <span class="tech-tag-90s">HTML5</span>
+                                    <span class="tech-tag-90s">CSS3</span>
+                                    <span class="tech-tag-90s">Responsive</span>
+                                </div>
+                            </article>
+                        </section>
+
+                        <!-- SEÇÃO: SKILLS -->
+                        <section
+                            class="section-90s"
+                            id="skills"
+                            role="region"
+                            aria-labelledby="skills-title"
+                        >
+                            <h2 id="skills-title">Skill Matrix</h2>
+                            <p class="section-description">
+                                Proficiência técnica baseada em projetos e
+                                experiência prática
+                            </p>
+
+                            <div class="skill-grid-90s">
+                                <div class="skill-card-90s">
+                                    <div class="skill-icon-90s">🐍</div>
+                                    <div class="skill-name-90s">Python</div>
+                                    <div class="skill-bar-90s">
+                                        <div
+                                            class="skill-level-90s"
+                                            style="width: 75%"
+                                            role="progressbar"
+                                            aria-valuenow="75"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            aria-label="Proficiência em Python"
+                                        ></div>
+                                    </div>
+                                    <div class="skill-text-90s">
+                                        Intermediário → Avançado
+                                    </div>
+                                </div>
+
+                                <div class="skill-card-90s">
+                                    <div class="skill-icon-90s">#</div>
+                                    <div class="skill-name-90s">C#</div>
+                                    <div class="skill-bar-90s">
+                                        <div
+                                            class="skill-level-90s"
+                                            style="width: 65%"
+                                            role="progressbar"
+                                            aria-valuenow="65"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            aria-label="Proficiência em C#"
+                                        ></div>
+                                    </div>
+                                    <div class="skill-text-90s">
+                                        Básico → Intermediário
+                                    </div>
+                                </div>
+
+                                <div class="skill-card-90s">
+                                    <div class="skill-icon-90s">🗄️</div>
+                                    <div class="skill-name-90s">SQL</div>
+                                    <div class="skill-bar-90s">
+                                        <div
+                                            class="skill-level-90s"
+                                            style="width: 70%"
+                                            role="progressbar"
+                                            aria-valuenow="70"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            aria-label="Proficiência em SQL"
+                                        ></div>
+                                    </div>
+                                    <div class="skill-text-90s">
+                                        Intermediário
+                                    </div>
+                                </div>
+
+                                <div class="skill-card-90s">
+                                    <div class="skill-icon-90s">🏷️</div>
+                                    <div class="skill-name-90s">HTML</div>
+                                    <div class="skill-bar-90s">
+                                        <div
+                                            class="skill-level-90s"
+                                            style="width: 85%"
+                                            role="progressbar"
+                                            aria-valuenow="85"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            aria-label="Proficiência em HTML"
+                                        ></div>
+                                    </div>
+                                    <div class="skill-text-90s">
+                                        Intermediário → Avançado
+                                    </div>
+                                </div>
+
+                                <div class="skill-card-90s">
+                                    <div class="skill-icon-90s">🎨</div>
+                                    <div class="skill-name-90s">CSS</div>
+                                    <div class="skill-bar-90s">
+                                        <div
+                                            class="skill-level-90s"
+                                            style="width: 80%"
+                                            role="progressbar"
+                                            aria-valuenow="80"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            aria-label="Proficiência em CSS"
+                                        ></div>
+                                    </div>
+                                    <div class="skill-text-90s">
+                                        Intermediário → Avançado
+                                    </div>
+                                </div>
+
+                                <div class="skill-card-90s">
+                                    <div class="skill-icon-90s">⚡</div>
+                                    <div class="skill-name-90s">JavaScript</div>
+                                    <div class="skill-bar-90s">
+                                        <div
+                                            class="skill-level-90s"
+                                            style="width: 72%"
+                                            role="progressbar"
+                                            aria-valuenow="72"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            aria-label="Proficiência em JavaScript"
+                                        ></div>
+                                    </div>
+                                    <div class="skill-text-90s">
+                                        Básico → Intermediário
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="github-cta">
+                                <a
+                                    href="https://github.com/Erick-Souza-Silva"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="github-link"
+                                >
+                                    → Visit GitHub Profile
+                                </a>
+                            </div>
+                        </section>
+
+                        <!-- SEÇÃO: CONTACT -->
+                        <section
+                            class="section-90s"
+                            id="contact"
+                            role="region"
+                            aria-labelledby="contact-title"
+                        >
+                            <h2 id="contact-title">Contact</h2>
+                            <div class="text-box-90s">
+                                <p>
+                                    <strong>Vamos conversar!</strong><br />
+                                    Fique à vontade para entrar em contato
+                                    comigo sobre oportunidades, colaborações ou
+                                    apenas para bater papo sobre tecnologia.
+                                </p>
+                                <ul style="margin-top: 12px; margin-left: 20px">
+                                    <li>
+                                        📧
+                                        <a
+                                            href="mailto:ericsouzasilva@gmail.com"
+                                            >ericsouzasilva@gmail.com</a
+                                        >
+                                    </li>
+                                    <li>
+                                        💼
+                                        <a
+                                            href="https://github.com/Erick-Souza-Silva"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >GitHub</a
+                                        >
+                                    </li>
+                                    <li>
+                                        💬
+                                        <a
+                                            href="https://www.linkedin.com/in/erick-souza-silva"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >LinkedIn</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+
+                <!-- STATUS BAR INFERIOR -->
+                <div class="status-bar-bottom-90s">
+                    <span class="status-text-90s"
+                        >✓ Ready • Last updated: Jan 31, 2026</span
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer role="contentinfo">
+            <p class="footer-text-90s">
+                © 2026 Erick Souza Silva. Todos os direitos reservados.
+            </p>
+        </footer>
+
+        <!-- JAVASCRIPT: NAVEGAÇÃO E INTERATIVIDADE -->
+        <script src="js/portfolio.js"></script>
+    </body>
+</html>
